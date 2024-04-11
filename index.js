@@ -1,13 +1,9 @@
-console.log('Hi Henry')
-
+console.log('Hi Henry');
 
 const mapArea = document.querySelector('.map-area');
 
-// Check if the mapArea is found before proceeding
 if (mapArea) {
-    const henry = henryCharacter(100, 100); // Create the henry object
-
-    // Check if henryCharacter function returns a valid object
+    const henry = henryCharacter(100, 100);
     if (henry && henry.element) {
         mapArea.appendChild(henry.element);
 
@@ -15,7 +11,7 @@ if (mapArea) {
             if (e.repeat) return;
 
             if (e.key === 'ArrowLeft') {
-                henry.moveCharacter('west'); // Adjust values as needed
+                henry.moveCharacter('west');
             }
             if (e.key === 'ArrowUp') {
                 henry.moveCharacter('north');
